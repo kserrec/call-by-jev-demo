@@ -5,10 +5,14 @@ Play at https://kserrec.github.io/call-by-jev-demo/
 This repository contains only the built static website. The implementation and
 project documentation are maintained in a separate private repository.
 
-Jev is connected. Select Mixed choice, then Step, to let Jev choose between the
-current legal reductions. The evaluator performs exactly the selected reduction
-and shows Jev's probabilities. STLC subset and Polymorphic identity reduce locally
-without an API call.
+The page opens with **Skip unused work**. Press **Ask Jev to choose** to see which
+of two valid steps Jev selects. The result appears in the same panel, with a
+before/after view and an explanation of what changed.
+
+**Edit or try another** contains other examples and the editor. **Details** contains
+types, Jev's reported probabilities, previous steps and automatic running.
+**Return an input** and **Fill in a type** each run locally without an API call;
+the page explicitly says when Jev is used. No request is sent merely by opening it.
 
 When there are multiple choices, the current term and complete candidate menu go
 through a Cloudflare Worker to TypeSafe's Jev. The private API credential stays in
